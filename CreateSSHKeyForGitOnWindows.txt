@@ -1,0 +1,8 @@
+打开安装的Git Bash生成ssh key
+
+ssh-keygen -t rsa -C "you@mail"
+之后会提示生成的文件名，自己随意取就行了，但Git Gui在add remote时要求的还是文件名为id_rsa的私钥文件密码，这个后面再改就行了
+
+生成的key pair在c盘用户目录下，把公钥内容复制到github上，私钥放到用户目录下的.ssh目录中去，文件名改成id_rsa就行了
+
+然后就可以正常在Git Gui中add remote了.
